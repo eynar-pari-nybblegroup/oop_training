@@ -11,34 +11,34 @@ public class Client {
         notas1.setNotaPF(6);
         notas1.setNota2P(8);
 
-        Docente docente = new Docente();
-        docente.setApellido("Lopez");
-        docente.setEdad(25);
-        docente.setNombre("agustin");
-        docente.setLegajo("1712344");
-        docente.setTurno("tarde");
+        Docente docente1 = new Docente();
+        docente1.setApellido("Lopez");
+        docente1.setEdad(25);
+        docente1.setNombre("agustin");
+        docente1.setLegajo("1712344");
+        docente1.setTurno("tarde");
 
-        Curso curso = new Curso();
-        curso.setHasPizarron(true);
-        curso.setAsientos(20);
-        curso.setNombreAula("aula1");
+        Curso curso1 = new Curso();
+        curso1.setHasPizarron(true);
+        curso1.setAsientos(20);
+        curso1.setNombreAula("aula1");
 
-        Alumno alumno = new Alumno();
-        alumno.setApellido("gomez");
-        alumno.setNombre("agustin");
-        alumno.setCarrera("administracion de empresas");
-        alumno.setEdad(21);
-        alumno.setNotas(notas1);
-        alumno.setLegajo("39754128");
+        Alumno alumno1 = new Alumno();
+        alumno1.setApellido("gomez");
+        alumno1.setNombre("agustin");
+        alumno1.setCarrera("administracion de empresas");
+        alumno1.setEdad(21);
+        alumno1.setNotas(notas1);
+        alumno1.setLegajo("39754128");
 
         List<Alumno> alumnos = new ArrayList<>();
-        alumnos.add(alumno);
+        alumnos.add(alumno1);
 
         Materia matematicas = new Materia();
-        matematicas.setAñoMateria(1);
+        matematicas.setAnoMateria(1);
         matematicas.setAlumnos(alumnos);
-        matematicas.setCurso(curso);
-        matematicas.setDocente(docente);
+        matematicas.setCurso(curso1);
+        matematicas.setDocente(docente1);
 
 
 

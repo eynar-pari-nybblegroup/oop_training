@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Materia {
 
-    private int añoMateria;
+    private Integer anoMateria;
     private Docente docente;
     private Curso curso;
     private List<Alumno> alumnos;
@@ -18,12 +18,12 @@ public class Materia {
 
 
 
-    public int getAñoMateria() {
-        return añoMateria;
+    public int getAnoMateria() {
+        return anoMateria;
     }
 
-    public void setAñoMateria(int añoMateria) {
-        this.añoMateria = añoMateria;
+    public void setAnoMateria(int anoMateria) {
+        this.anoMateria = anoMateria;
     }
 
     public Docente getDocente() {
