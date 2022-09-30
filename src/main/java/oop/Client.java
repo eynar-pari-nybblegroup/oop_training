@@ -1,7 +1,7 @@
 package oop;
 
 public class Client {
-    public static void main(){
+    public static void main(String [] aj){
         Persona personA = new Persona();
         personA.setName("Julian");
 
@@ -14,5 +14,14 @@ public class Client {
         System.out.println("Persona C: " + personC.getName());
         System.out.println("Persona B: " + personB.getName());
         System.out.println("Persona A: " + personA.getName());
+
+        Student studentA = new Student();
+        studentA.run();
+
+        Cuadrado cuadradoA = new Cuadrado(5);
+
+        cuadradoA.pintar();
+        cuadradoA.area();
+        cuadradoA.mover();
     }
 }
