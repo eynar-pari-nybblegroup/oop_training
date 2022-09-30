@@ -50,4 +50,8 @@ public class Person {
     public void setProfession(String profession) {
         this.profession = profession;
     }
+
+    public void run(){
+        System.out.println("empezo a correr");
+    }
 }
