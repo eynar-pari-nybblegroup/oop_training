@@ -4,10 +4,10 @@ public class Person {
      // attribute
      // encapsulacion
      private String name;
-     private int id;
      private String date;
      private String height;
      private String profession;
+     private int id;
 
      // constructor
      public Person(){
