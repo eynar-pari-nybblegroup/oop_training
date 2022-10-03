@@ -17,6 +17,15 @@ public class Client {
         System.out.println("Person B: "+personB.getName());
         System.out.println("Person C: "+personC.getName());
 
+        Student studentA = new Student();
+
+        studentA.run();
+
+        Cuadrado cuadradoA = new Cuadrado(5);
+        cuadradoA.pintar();
+        cuadradoA.area();
+        cuadradoA.mover();
+
     }
 
 }
