@@ -11,10 +11,7 @@ public class Client {
         Alumno[] alumnosMatematica = new Alumno[2];
         Alumno juan = new Alumno();
         Alumno pepe = new Alumno();
-        /*alumnosMatematica.add(juan);
-        alumnosMatematica.add(pepe);
-        alumnosIngles.add(juan);
-        alumnosIngles.add(pepe);*/
+
         juan.setDni(42120395);
         juan.setNombre("juan");
         juan.setApellido("Rodriguez");
@@ -57,6 +54,14 @@ public class Client {
         ingles.setDocente(docente1);
         matematica.setDocente(docente2);
 
+        //imprimir por pantalla
+
+        System.out.println("***"+matematica.getNombre_materia()+"***");
+        System.out.println("Curso: "+matematica.getCurso());
+        for (Alumno alumno: alumnosIngles) {
+            System.out.println(alumno);
+        }
+        System.out.println();
 
 
     }
