@@ -7,10 +7,13 @@ public class Course
     private Teacher assignedTeacher;
     private List<Student> studentsList;
     private List<Subject> assignedSubjects; // no necesita estar inicializado?
+    private boolean hasProjector;
+    private boolean hasComputer;
+    private int sitsNumber;
 
-    public Course()
+    public Course(String courseId, int sitsNumber)
     {
-        System.out.println("Constructor Course");
+
     }
 
     //Getters & Setters

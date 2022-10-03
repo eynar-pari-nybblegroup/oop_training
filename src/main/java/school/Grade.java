@@ -2,39 +2,38 @@ package school;
 
 public class Grade
 {
-    private float firstGrade;
-    private float secondGrade;
-    private float finalNote;
+    private int grade;
+    private String description;
 
-    public Grade()
+    //Constructor
+    public Grade(int grade, String description)
     {
-        System.out.println("Constructor Grade");
+        this.grade = grade;
+        this.description = description;
     }
 
     //Getters & Setters
 
 
-    public float getFirstGrade() {
-        return firstGrade;
+    public int getGrade() {
+        return grade;
     }
 
-    public void setFirstGrade(float firstGrade) {
-        this.firstGrade = firstGrade;
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
 
-    public float getSecondGrade() {
-        return secondGrade;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSecondGrade(float secondGrade) {
-        this.secondGrade = secondGrade;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public float getFinalNote() {
-        return finalNote;
-    }
-
-    public void setFinalNote(float finalNote) {
-        this.finalNote = finalNote;
+    public void showInfo()
+    {
+        System.out.println("Grade: " + grade);
+        System.out.println("description:" + description);
     }
 }

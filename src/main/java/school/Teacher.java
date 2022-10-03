@@ -1,5 +1,6 @@
 package school;
 
+import javax.sound.midi.MidiDevice;
 import java.util.*;
 
 public class Teacher extends Person
@@ -8,6 +9,8 @@ public class Teacher extends Person
     private List<Subject> assignedSubjects; // no necesita estar inicializado?
     private float hours;
     private float salary;
+    private boolean isContractor;
+    private int idTeacher;
 
     public Teacher()
     {
@@ -46,5 +49,30 @@ public class Teacher extends Person
 
     public void setSalary(float salary) {
         this.salary = salary;
+    }
+
+    public boolean isContrator() {
+        return isContrator;
+    }
+
+    public void setContractor(boolean contrator) {
+        isContrator = contrator;
+    }
+
+    public int getIdTeacher() {
+        return idTeacher;
+    }
+
+    public void setIdTeacher(int idTeacher) {
+        this.idTeacher = idTeacher;
+    }
+
+    @Override
+    public void showInfo()
+    {
+        System.out.println("****** TEACHER ******");
+        super.showInfo();
+        System.out.println("is contractor?:" + isContrator);
+        System.out.println("Id Docente:"+ idTeacher);
     }
 }

@@ -6,11 +6,14 @@ public class Subject
     private String subjectName;
     private int subjectId;
     private String teacher;
-    private List<Student> assignedStudents; //debe estar inicializado (no puede haber materias sin alumnos)
+    private List<Student> assignedStudents; //debe estar inicializado (no puede haber materias sin alumnos) --> composicion
+
+    // private Map<String, Student> studentMap = new HashMap<>();
+    private int capacity;
 
     public Subject()
     {
-        System.out.println("Constructor Subject");
+        capacity = 30;
     }
 
     //Getters & Setters
@@ -45,5 +48,38 @@ public class Subject
 
     public void setAssignedStudents(List<Student> assignedStudents) {
         this.assignedStudents = assignedStudents;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setCourse(Course torres) {
+    }
+
+    public void addStudentList(Student estudiante2)
+    {
+        //if preguntar si el estudiante ya existe antes de agregar
+        for (Student estudiante: assignedStudents)
+        {
+            if(estudiante.getMatricula().equals(estudiante2.getMatricula()))
+            {
+                inscription = false;
+            }
+        }
+        if (inscription)
+        {
+            this.assignedStudents.add(estudiante);
+        }
+
+    }
+
+    public void showSubjectInfo()
+    {
+
     }
 }

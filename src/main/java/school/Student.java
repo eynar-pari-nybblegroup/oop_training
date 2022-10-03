@@ -8,7 +8,9 @@ public class Student extends Person
     private Course assignedCourse;
     private List<Subject> assignedSubjects; // relacion necesaria
     private float gradesAverage;
-    private Date InscriptionDate;
+    private Date inscriptionDate;
+    private int matricula;
+    private int nivel;
 
     public Student()
     {
@@ -50,10 +52,34 @@ public class Student extends Person
     }
 
     public Date getInscriptionDate() {
-        return InscriptionDate;
+        return inscriptionDate;
     }
 
     public void setInscriptionDate(Date inscriptionDate) {
-        InscriptionDate = inscriptionDate;
+        inscriptionDate = inscriptionDate;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public void showInfo()
+    {
+        System.out.println("****** STUDENT ******");
+        super.showInfo();
+        System.out.println("Matricula:"+matricula+"nivel"+nivel);
+        //imprimir lista de notas
     }
 }

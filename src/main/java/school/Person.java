@@ -8,6 +8,7 @@ public class Person
     private String lastName;
     private int id;
     private int age;
+    //fecha de nacimiento
 
     public Person()
     {
@@ -46,5 +47,10 @@ public class Person
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void showInfo()
+    {
+        System.out.println("name:" +name+"\n"+"Last name:"+lastName+"\n"+"id:"+id+"age:"+age);
     }
 }
