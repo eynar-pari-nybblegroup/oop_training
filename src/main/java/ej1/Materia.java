@@ -1,6 +1,8 @@
 package ej1;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Materia {
@@ -9,6 +11,8 @@ public class Materia {
     private Docente docente;
     private Curso curso;
     private Map<String, Estudiante> estudianteMap = new HashMap<>();
+
+    private List<Estudiante> estudianteList = new ArrayList<>();
 
     public Materia(){
         capacidad=30;
@@ -56,7 +60,22 @@ public class Materia {
             estudianteMap.get(numMatricula).showInfo();
         }
 
+        for ( Estudiante estudiante:estudianteList) {
+            estudiante.showInfo();
+        }
+
     }
 
 
+    public void addEstudianteList(Estudiante estudiante2) {
+        boolean inscripcion=true;
+        for ( Estudiante estudiante:estudianteList) {
+            if (estudiante.getNumMatricula().equals(estudiante2.getNumMatricula())){
+                inscripcion=false;
+            }
+        }
+
+        if (inscripcion)
+            this.estudianteList.add(estudiante2);
+    }
 }
