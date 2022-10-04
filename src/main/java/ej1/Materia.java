@@ -66,7 +66,7 @@ public class Materia {
 
     }
 
-
+//versr
     public void addEstudianteList(Estudiante estudiante2) {
         boolean inscripcion=true;
         for ( Estudiante estudiante:estudianteList) {
