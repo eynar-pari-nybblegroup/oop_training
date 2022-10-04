@@ -1,4 +1,4 @@
-package singleton;
+package singleton.structure;
 
 public class Persona
 {

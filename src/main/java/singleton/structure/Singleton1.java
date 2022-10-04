@@ -1,8 +1,9 @@
-package singleton;
+package singleton.structure;
 
 public class Singleton1
 {
     //1ra tener como atributo a la misma clase
+    //se rompe en multihilo, porque se vuelve a instanciar en cada hilo
     private static Singleton1 instance = null;
 
     //2da el constructor tiene que ser privado
@@ -24,5 +25,10 @@ public class Singleton1
     public void getHora()
     {
         System.out.println("hora.");
+    }
+
+    public void restarSingleton()
+    {
+
     }
 }

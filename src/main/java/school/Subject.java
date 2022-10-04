@@ -61,22 +61,22 @@ public class Subject
     public void setCourse(Course torres) {
     }
 
-    public void addStudentList(Student estudiante2)
-    {
-        //if preguntar si el estudiante ya existe antes de agregar
-        for (Student estudiante: assignedStudents)
-        {
-            if(estudiante.getMatricula().equals(estudiante2.getMatricula()))
-            {
-                inscription = false;
-            }
-        }
-        if (inscription)
-        {
-            this.assignedStudents.add(estudiante);
-        }
-
-    }
+//    public void addStudentList(Student estudiante2)
+//    {
+//        //if preguntar si el estudiante ya existe antes de agregar
+//        for (Student estudiante: assignedStudents)
+//        {
+////            if(estudiante.getMatricula().equals(estudiante2.getMatricula()))
+////            {
+////                inscription = false;
+////            }
+////        }
+////        if (inscription)
+////        {
+////            this.assignedStudents.add(estudiante);
+////        }
+//
+//    }
 
     public void showSubjectInfo()
     {

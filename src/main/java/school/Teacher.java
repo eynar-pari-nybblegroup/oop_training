@@ -51,12 +51,12 @@ public class Teacher extends Person
         this.salary = salary;
     }
 
-    public boolean isContrator() {
-        return isContrator;
+    public boolean isContractor() {
+        return isContractor;
     }
 
     public void setContractor(boolean contrator) {
-        isContrator = contrator;
+        isContractor = contrator;
     }
 
     public int getIdTeacher() {
@@ -72,7 +72,7 @@ public class Teacher extends Person
     {
         System.out.println("****** TEACHER ******");
         super.showInfo();
-        System.out.println("is contractor?:" + isContrator);
+        System.out.println("is contractor?:" + isContractor);
         System.out.println("Id Docente:"+ idTeacher);
     }
 }
