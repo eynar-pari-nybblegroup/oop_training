@@ -1,0 +1,15 @@
+Ejemplo de cuenta Bancaria:
+
+Se tiene un persona que posee una cuenta bancaria con un saldo X (1000), esta persona
+tiene la posibilidad de extraer/retirar dinero en tres formas diferentes
+  *- utilizando un cajero --> targeta
+  *- utilizando una sucursal ---> dni
+  *- utilizando la app movil del banco ---> codigo phone
+
+esta persona trata de sacar dinero al mismo  tiempo
+
+--> cajero ---> 200
+--> sucursal ---> 250
+---> app movil ---> 100
+
+ 1000 - 550  --> 450bs
