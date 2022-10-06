@@ -17,7 +17,6 @@ public class FactoryObjeto {
             default:
                 objeto = new ClaseD();
                 break;
-
         }
         return objeto;
 
